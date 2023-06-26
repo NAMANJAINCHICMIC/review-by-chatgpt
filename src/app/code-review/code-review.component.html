@@ -1,0 +1,16 @@
+<h1>Code Review</h1>
+<input type="file" (change)="onFileChange($event)">
+<button (click)="reviewCode()">Review Code</button>
+<!-- <div >
+  <mat-spinner></mat-spinner>
+  <mat-progress-spinner
+        class="example-margin"
+        [color]="color"
+        [mode]="mode"
+        >
+    </mat-progress-spinner>
+</div> -->
+<div *ngIf="reviewResult">
+  <h2>Review Result:</h2>
+  <p>{{ reviewResult }}</p>
+</div>
